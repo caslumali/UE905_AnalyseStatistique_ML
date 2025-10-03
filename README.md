@@ -1,46 +1,75 @@
-# UE 905 - Analyses Statistiques 📊
+# UE 905 – Statistical Analyses 📊
 
-Ce dépôt contient le projet réalisé dans le cadre de l'UE 905 du **Master 2 SIGMA**. L'objectif était d'explorer différentes analyses statistiques appliquées aux relevés forestiers, en utilisant des modèles linéaires, mixtes et généralisés.
-
-## 📁 Contenu du projet
-
-- `UE_905_BBHL.pdf` : **Rapport final** avec toutes les analyses et conclusions.
-- `UE_905_BBHL.Rmd` : **Script RMarkdown** contenant le code et les explications.
-- `projet2024-2025.pdf` : **Sujet du projet** avec les 5 questions à traiter.
-- `dataProjet_2025.csv` : **Données utilisées** (à ajouter si nécessaire).
-- `README.md` : Ce fichier expliquant le projet.
-
-## 📌 Méthodologie
-
-Le projet se divise en **5 analyses principales** :
-
-1. **ANOVA** : Effet des relevés sur le diamètre des charmes.
-2. **Régression linéaire** : Influence de `lastLog` sur `DBH`.
-3. **ANOVA hiérarchique** : Effet des triangles spatiaux sur `DBH`.
-4. **Modèle mixte** : Relation entre `lastLog` et `relevé`.
-5. **Modèle généralisé binomial** : Présence de cavité basse en fonction de `DBH`.
-
-Chaque analyse inclut la **vérification des hypothèses**, la **modélisation** et une **interprétation détaillée des résultats**.
-
-## 🔧 Technologies utilisées
-
-- **R** avec les packages : `lme4`, `ggplot2`, `DHARMa`, `dplyr`, `MuMIn`, `car`
-- **RMarkdown** pour la génération du rapport
-- **Git** pour la gestion des versions
-
-## 🚀 Exécution du projet
-
-1. Cloner ce dépôt :
-
-   ```sh
-   git clone https://github.com/RobinHhI/r_905.git
-   cd votre-repo
-   ```
-
-2. Ouvrir le fichier **RMarkdown** (`UE_905_BBHL.Rmd`) et exécuter les analyses dans **RStudio**.
-3. Vérifier les résultats et générer un rapport en **PDF**.
+Advanced statistical modelling applied to forest inventory data, using linear models, mixed models, and generalized linear models in R.
 
 ---
 
-💡 **Auteurs** : BALLOT Doris, BARBIERO Audrey, HECKENDORN Robin, LIMA Lucas  
-📅 **Année** : 2025  
+## 🌍 Project Context
+
+This project was developed as part of the **UE 905 – Statistical Analyses** course in the **SIGMA Master's program** (Agro Toulouse / Université Toulouse II – Jean Jaurès).  
+
+The main objective was to **apply and interpret various statistical models** on forest inventory data collected in southern France, focusing on:
+- the effects of spatial sampling designs on tree diameters (DBH),
+- the influence of past logging events,
+- and the occurrence of cavities in different species.
+
+---
+
+## 🧪 Analyses Performed
+
+1. **ANOVA** — Testing the effect of sampling plots on *Carpinus betulus* DBH.  
+2. **Linear regression** — Exploring the relationship between `lastLog` (time since last logging) and DBH for *Quercus* species.  
+3. **Hierarchical ANOVA** — Grouping sampling plots into spatial triangles to test structured spatial effects.  
+4. **Linear mixed model (LMM)** — Assessing whether `lastLog` explains plot-level variability.  
+5. **Binomial GLM** — Modelling the presence of tree cavities as a function of DBH and site characteristics.
+
+Each model includes **diagnostics of residuals**, **hypothesis verification**, and a detailed interpretation of the results.
+
+<p align="center">
+  <img src="images/anova_diagnostics.png" alt="ANOVA residual diagnostics example" width="600">
+</p>
+
+---
+
+## 🛠 Technologies & Tools
+
+- **R** (packages: `lme4`, `ggplot2`, `DHARMa`, `dplyr`, `MuMIn`, `car`)  
+- **RMarkdown** for report generation  
+- **Git / GitHub** for version control
+
+---
+
+## 🚀 How to Run
+
+1. Clone the repository:
+
+```bash
+   git clone https://github.com/caslumali/UE905_AnalyseStatistique_ML.git
+   cd UE905_AnalyseStatistique_ML
+```
+
+2. Open `UE_905_BBHL.Rmd` in **RStudio** and run the chunks sequentially.
+
+3. Knit the RMarkdown file to generate the **PDF report**.
+
+---
+
+## 📎 Repository Structure
+
+```
+UE905_AnalyseStatistique_ML/
+├── UE_905_BBHL.Rmd    # Main RMarkdown analysis script
+├── UE_905_BBHL.pdf    # Final report with results
+├── dataProjet_2025.csv # Input dataset (if available)
+├── projet2024-2025.pdf # Original project description
+└── README.md
+```
+
+---
+
+## ✍️ Authors
+
+Doris BALLOT, Audrey BARBIERO, Robin HECKENDORN, Lucas LIMA
+📅 2025 – Master 2 SIGMA
+
+---
