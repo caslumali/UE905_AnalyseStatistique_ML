@@ -1,0 +1,17 @@
+# Ignorer fichiers défault R
+.Rproj.user
+*.Rhistory
+.RData
+.Ruserdata
+*.Rproj
+.Rhistory
+
+
+# Ignorer dossiers
+0_Projet_V1/
+
+# Ignorer fichiers spécifiques
+r_905.code-workspace
+projet2024-2025.pdf
+UE_905_BBHL_v0.qmd
+script.Rmd
